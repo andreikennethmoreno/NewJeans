@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>NewJeans | by KennOnirom</title>
+  <script src="media/https://kit.fontawesome.com/3b4641e9b7.js" crossorigin="anonymous"></script>
+
+  <meta name="viewport" content="with-device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js" integrity="sha384-MCw98/SFnGE8fJT3KOJ8QlTlmfHzpUA+EA5onESq1EM5F9lA6rw5h1KaTkJl2bc" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- This is a comment -->
+
+  <link rel="icon" href="media/newjeansname.png" type="image/png">
+
+
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="media/https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="media/https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="media/https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+<body>
+<div >
+  <div >
+    <!-- header  -->
+    <section class="header">
+      
+      <nav>
+        <div class="nav-links" id="navLinks">
+          <!-- close icon -->
+            <i id="x-mark" class="fa-solid fa-circle-xmark fa-lg " onclick="hideMenu()" style="color: #ffffff;"></i>
+
+            <!-- navigate -->
+            <ul>
+              <li><a href="./index.html"><b>NewJeans</b></a></li>
+              <li><a href="#introduction"><b>Introduction</b></a></li>
+              <li><a href="#songs"><b>Songs</b></a></li>
+              <li><a href="#members"><b>Members</b></a></li>
+            </ul>
+      </div>
+      <a data-bs-toggle="modal" data-bs-target="#exampleModal" id="fix-padding"><img src="media/newbunny.jpg" alt="newjeans bunny"></a><br>
+
+      <!-- menu -->
+      <i id="menu" class="fa-solid fa-bars fa-lg "  onclick="showMenu()" style="color: #ffffff;"></i>
+      </nav>
+    </section>
+
+    <!-- hides the menu and close bar when using PC -->
+    <script>
+      var navLinks= document.getElementById("navLinks");
+
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+<!-- Sample opening (infront of the header bg) -->
+<div class="text-box">
+    
+    <img src="media/bunnybunny.gif" alt="Bunny Bunny GIF">
+  <br>
+  <br>
+  <button type="button" class="btn transparent-btn" data-toggle="modal" data-target="#myModal"><b>Pick Bias</b></button>
+
+
+</div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Vote for Your Favorite NewJeans Member</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+
+          <div class="container mt-5">
+            <img src="media/bunnybunny.gif" alt="Bunny" height="100" width="auto">
+
+            <h4 class="mb-4">
+          </h4>          
+            <!-- Options -->
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="option" id="option1" value="Minji">
+                <label class="form-check-label" for="option1">Minji</label>
+            </div>
+          
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="option" id="option2" value="Hanni">
+                <label class="form-check-label" for="option2">Hanni</label>
+            </div>
+          
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="option" id="option3" value="Danielle">
+                <label class="form-check-label" for="option3">Danielle</label>
+            </div>
+          
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="option" id="option4" value="Haerin">
+                <label class="form-check-label" for="option4">Haerin</label>
+            </div>
+          
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="option" id="option5" value="Hyein">
+                <label class="form-check-label" for="option5">Hyein</label>
+            </div>
+          
+            <!-- Vote button -->
+            <button class="btn btn-primary mt-3" onclick="vote()" id="voteButton">Vote</button>
+          
+            <!-- Result display -->
+            <div class="mt-4" id="result"></div>
+          </div>
+          
+          <script>
+            function vote() {
+                // Get the selected option
+                var selectedOption = document.querySelector('input[name="option"]:checked');
+          
+                if (!selectedOption) {
+                    alert("Please select an option before voting.");
+                    return;
+                }
+          
+                // Disable the button after voting
+                document.getElementById("voteButton").disabled = true;
+          
+                // Update vote count and calculate percentage
+                var optionValue = selectedOption.value;
+                var votes = JSON.parse(localStorage.getItem("votes")) || {
+                    "Minji": 0,
+                    "Hanni": 0,
+                    "Danielle": 0,
+                    "Haerin": 0,
+                    "Hyein": 0
+                };
+                votes[optionValue]++;
+                localStorage.setItem("votes", JSON.stringify(votes));
+          
+                // Display the result
+                displayResult();
+            }
+          
+            function displayResult() {
+                var votes = JSON.parse(localStorage.getItem("votes")) || {
+                    "Minji": 0,
+                    "Hanni": 0,
+                    "Danielle": 0,
+                    "Haerin": 0,
+                    "Hyein": 0
+                };
+                var totalVotes = votes["Minji"] + votes["Hanni"] + votes["Danielle"] + votes["Haerin"] + votes["Hyein"];
+          
+                var resultHTML = "<h4>Results:</h4>";
+          
+                // Check if totalVotes is zero to avoid division by zero
+                if (totalVotes === 0) {
+                    resultHTML += "<p>No votes yet.</p>";
+                } else {
+                    resultHTML += "<p>Minji: " + (votes["Minji"] / totalVotes * 100).toFixed(2) + "%</p>";
+                    resultHTML += "<p>Hanni: " + (votes["Hanni"] / totalVotes * 100).toFixed(2) + "%</p>";
+                    resultHTML += "<p>Danielle: " + (votes["Danielle"] / totalVotes * 100).toFixed(2) + "%</p>";
+                    resultHTML += "<p>Haerin: " + (votes["Haerin"] / totalVotes * 100).toFixed(2) + "%</p>";
+                    resultHTML += "<p>Hyein: " + (votes["Hyein"] / totalVotes * 100).toFixed(2) + "%</p>";
+                }
+          
+                document.getElementById("result").innerHTML = resultHTML;
+            }
+          </script>
+          
+          
+          
+          </section>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<section id="introduction">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Content for the first column -->
+        <h1>About NewJeans</h1>
+        <br>
+
+        <p >
+          <b><i>NewJeans</i></b> (Korean: 뉴진스; RR: <em>Nyujinseu</em>) is a South Korean girl group formed by ADOR.
+          The group is composed of five members: Minji, Hanni, Danielle, Haerin, and Hyein.
+          They debuted in July 2022 with the single "Attention", followed shortly afterwards by two other singles,"Hype Boy" and "Cookie".
+
+          The singles were all featured on their eponymous debut extended play,
+          released in August 2022. In 2023, they released their first single album OMG to commercial success.
+          It was accompanied by two singles, "Ditto" and "OMG
+        </p>
+        <br>
+
+        <h1>Name Origin</h1>
+        <br>
+
+        <p>
+          The group's name, NewJeans, is a double entendre.
+          It alludes to the idea that jeans are a timeless fashion item and the group's intention to carve a timeless image for themselves.
+          The name is also a word play on the phrase "new genes", referring to the group ushering a new generation of pop music.
+        </p>
+    </div>
+      <div class="col-md-6" style="padding:15px">
+        <div class=" mx-auto custom-container p-4">
+          <!-- Your content goes here -->
+          <img src="media/newbunny.jpeg" alt="bunny">
+          <p>hello world</p>
+  
+        </div>
+      </div>
+     
+  
+   
+       
+    </div>
+  </div>
+  
+
+</section>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<section class="members"id="songs">
+  <h1>Singles and Albums</h1>
+  <br>
+  <br>
+  <div class="row">
+    <div class="song-col">
+      <img src="media/single4.png">
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1741236135&color=%2338673c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/newjeans-music" title="NewJeans" target="_blank" style="color: #cccccc; text-decoration: none;">NewJeans</a> · <a href="https://soundcloud.com/newjeans-music/sets/njwmx" title="NJWMX" target="_blank" style="color: #cccccc; text-decoration: none;">NJWMX</a></div>
+      </div>
+    <div class="song-col">
+      <img src="media/single3.jpg">
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1414684012&color=%23525252&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/newjeans-music" title="NewJeans" target="_blank" style="color: #cccccc; text-decoration: none;">NewJeans</a> · <a href="https://soundcloud.com/newjeans-music/omg" title="OMG" target="_blank" style="color: #cccccc; text-decoration: none;">OMG</a></div>
+    </div>
+
+    <div class="song-col">
+      <img src="media/single2.png">
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1405742785&color=%23af525d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/newjeans-music" title="NewJeans" target="_blank" style="color: #cccccc; text-decoration: none;">NewJeans</a> · <a href="https://soundcloud.com/newjeans-music/ditto" title="Ditto" target="_blank" style="color: #cccccc; text-decoration: none;">Ditto</a></div>
+
+    </div>
+
+    <div class="song-col">
+      <img src="media/single1.jpg">
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1477418758&color=%235e679f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/newjeans-music" title="NewJeans" target="_blank" style="color: #cccccc; text-decoration: none;">NewJeans</a> · <a href="https://soundcloud.com/newjeans-music/sets/newjeans-1st-ep-new-jeans-1" title="NewJeans 1st EP &#x27;New Jeans&#x27;" target="_blank" style="color: #cccccc; text-decoration: none;">NewJeans 1st EP &#x27;New Jeans&#x27;</a></div>
+
+     </div>
+
+   
+  </div>
+
+  
+
+  
+
+  
+
+
+</section>
+
+<br>
+<br>
+<br>
+<br>
+
+  <section class="members">
+    <div id="members">
+      <h1>Members</h1>
+      <br>
+      <br>
+
+      <div class="row">
+
+
+        <div class="members-col">
+          <a href="#" data-toggle="modal" data-target="#minjiModal">
+            <img src="media/1_minji.jpeg" alt="Minji">
+            <h3>Minji</h3>
+          </a>
+        </div>
+        
+        <!-- Bootstrap Modal for Minji -->
+        <div class="modal fade" id="minjiModal" tabindex="-1" role="dialog" aria-labelledby="minjiModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="minjiModalLabel">About Minji</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="text-align: left;">
+                  <strong>Stage Name:</strong> Minji (민지)<br>
+                  <strong>Birth Name:</strong> Kim Minji (김민지)<br>
+                  <strong>Birthday:</strong> May 7, 2004<br>
+                  <strong>Zodiac Sign:</strong> Taurus<br>
+                  <strong>Chinese Zodiac Sign:</strong> Monkey<br>
+                  <strong>Height:</strong> 169 cm (5’6”)<br>
+                  <strong>Weight:</strong> –<br>
+                  <strong>Blood Type:</strong> A<br>
+                  <strong>MBTI Type:</strong> ESTJ-T<br>
+                  <strong>Nationality:</strong> Korean<br>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="members-col">
+          <a href="#" data-toggle="modal" data-target="#hanniModal">
+            <img src="media/1_hanni.jpeg" alt="Hanni">
+            <h3>Hanni</h3>
+          </a>
+        </div>
+        
+        <!-- Bootstrap Modal for Hanni -->
+        <div class="modal fade" id="hanniModal" tabindex="-1" role="dialog" aria-labelledby="hanniModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="hanniModalLabel">About Hanni</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="text-align: left;">
+                <!-- Add content here for Hanni's modal -->
+                  <strong>Stage Name:</strong> Hanni (하니)<br>
+                  <strong>Birth Name:</strong> Phạm Ngọc Hân / Hanni Pham)<br>
+                  <strong>Birthday:</strong> October 6, 2004<br>
+                  <strong>Zodiac Sign:</strong> Libra<br>
+                  <strong>Chinese Zodiac Sign:</strong> Monkey<br>
+                  <strong>Height:</strong> 161.7 cm (5’3”)<br>
+                  <strong>Weight:</strong> –<br>
+                  <strong>Blood Type:</strong> O<br>
+                  <strong>MBTI Type:</strong> INFP<br>
+                  <strong>Nationality:</strong> Vietnamese-Australian<br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+
+
+        <div class="members-col">
+          <a href="#" data-toggle="modal" data-target="#danielleModal">
+            <img src="media/1_Danielle.jpeg" alt="Danielle">
+            <h3>Danielle</h3>
+          </a>
+        </div>
+        
+        <!-- Bootstrap Modal for Danielle -->
+        <div class="modal fade" id="danielleModal" tabindex="-1" role="dialog" aria-labelledby="danielleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="danielleModalLabel">About Danielle</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="text-align: left;">
+                <!-- Add content here for Danielle's modal -->
+                <strong>Stage Name:</strong> Danielle (다니엘)<br>
+                <strong>Birth Name:</strong> Danielle Marsh / Mo Jihye (모지혜)<br>
+                <strong>Birthday:</strong> April 11, 2005<br>
+                <strong>Zodiac Sign:</strong> Aries<br>
+                <strong>Chinese Zodiac Sign:</strong> Rooster<br>
+                <strong>Height:</strong> 165 cm (5’5″)<br>
+                <strong>Weight:</strong> –<br>
+                <strong>Blood Type:</strong> AB<br>
+                <strong>MBTI Type:</strong> ENFP<br>
+                <strong>Nationality:</strong> Korean-Australian<br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+
+
+        <div class="members-col">
+          <a href="#" data-toggle="modal" data-target="#haerinModal">
+            <img src="media/1_Haerin.jpeg" alt="Haerin">
+            <h3>Haerin</h3>
+          </a>
+        </div>
+        
+        <!-- Bootstrap Modal for Haerin -->
+        <div class="modal fade" id="haerinModal" tabindex="-1" role="dialog" aria-labelledby="haerinModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="haerinModalLabel">About Haerin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="text-align: left;">
+                <!-- Add content here for Haerin's modal -->
+                <strong>Stage Name:</strong> Haerin (해린)<br>
+              <strong>Birth Name:</strong> Kang Haerin (강해린)<br>
+              <strong>Birthday:</strong> May 15, 2006<br>
+              <strong>Zodiac Sign:</strong> Taurus<br>
+              <strong>Chinese Zodiac Sign:</strong> Dog<br>
+              <strong>Height:</strong> 164.5 cm (5’5”)<br>
+              <strong>Weight:</strong> –<br>
+              <strong>Blood Type:</strong> B<br>
+              <strong>MBTI Type:</strong> ISTP<br>
+              <strong>Nationality:</strong> Korean<br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+
+        <div class="members-col">
+          <a href="#" data-toggle="modal" data-target="#hyeinModal">
+            <img src="media/1_Hyein.jpeg" alt="Hyein">
+            <h3>Hyein</h3>
+          </a>
+        </div>
+        
+        <!-- Bootstrap Modal for Hyein -->
+        <div class="modal fade" id="hyeinModal" tabindex="-1" role="dialog" aria-labelledby="hyeinModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="hyeinModalLabel">About Hyein</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="text-align: left;">
+                <!-- Add content here for Hyein's modal -->
+                <strong>Stage Name:</strong> Hyein (혜인)<br>
+                <strong>Birth Name:</strong> Lee Hyein (이혜인) / Li Huiren (李惠仁) / Grace Lee<br>
+                <strong>Birthday:</strong> April 21, 2008<br>
+                <strong>Zodiac Sign:</strong> Taurus<br>
+                <strong>Chinese Zodiac Sign:</strong> Rat<br>
+                <strong>Height:</strong> 170 cm (5’7″)<br>
+                <strong>Weight:</strong> –<br>
+                <strong>Blood Type:</strong> O<br>
+                <strong>MBTI Type:</strong> INFP<br>
+                <strong>Nationality:</strong> Korean<br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+  </section>
+
+   
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+
+<i class="fa fa-youtube-play white-icon" aria-hidden="true"></i>
+
+
+<section id="contact">
+  <footer class="black-footer">
+    <div class="container">
+      <div class="row">
+        <!-- On small screens, set flex direction to column and create 5 columns -->
+        <div class="col-12 col-sm-6 col-md-3"> </div>
+        <div class="col-12 col-sm-6 col-md-3"></div>
+        <div class="col-12 col-sm-6 col-md-3"></div>
+        <div class="col-12 col-sm-6 col-md-3"></div>
+        <div class="col-12 col-md-3 d-md-none d-lg-none d-xl-none"></div> <!-- Add an empty column for spacing on small screens -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <img src="media/newjeansname.png" style="height: 100px; width: auto;" class="img-fluid" alt="Jeans Image">
+      </div>    
+      </div>
+    </div>
+  </footer>
+</section>
+
+</body>
+</html>
